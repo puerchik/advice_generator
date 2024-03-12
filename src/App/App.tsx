@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import s from "./App.module.css";
+import { appActions } from "../store/adviceGeneratorSlice";
 import { getAdvice } from "../features/api";
 import { useAppDispatch, useAppSelector } from "../hooks/reduxHooks";
-import { appActions } from "../store/adviceGeneratorSlice";
+import s from "./App.module.css";
 
 function App() {
   const advice = useAppSelector((state) => state.appReducer);

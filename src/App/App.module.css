@@ -5,12 +5,13 @@
   align-items: center;
 }
 .adviceBox {
+  position: relative;
   box-sizing: border-box;
   width: 540px;
   min-height: 330px;
   background-color: hsl(219, 19%, 24%);
   text-align: center;
-  padding: 50px;
+  padding: 50px 50px 90px;
   border-radius: 15px;
   box-shadow: 0px 0px 29px 5px rgba(50, 58, 73, 0.52);
   -webkit-box-shadow: 0px 0px 29px 5px rgba(50, 58, 73, 0.52);
@@ -23,7 +24,21 @@
   margin-bottom: 35px;
 }
 .adviceBoxText {
+  position: relative;
   margin-bottom: 15px;
 }
+.adviceBoxText::after {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  content: "";
+  width: 444px;
+  height: 16px;
+  background-image: url("./../assets/images/pattern-divider-desktop.svg");
+}
 .adviceBoxButton {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
 }
