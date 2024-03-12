@@ -23,9 +23,7 @@ function App() {
         <div className={s.adviceBox}>
           <h3 className={s.adviceBoxTitle}>{`ADVICE #${advice.id}`}</h3>
           <p className={s.adviceBoxText}>{advice.advice}</p>
-          <button onClick={setAdvice} className={s.adviceBoxButton}>
-            adviceBoxButton
-          </button>
+          <button onClick={setAdvice} className={s.adviceBoxButton}></button>
         </div>
       </div>
       <div className="attribution">

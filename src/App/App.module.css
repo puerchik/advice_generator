@@ -37,8 +37,25 @@
   background-image: url("./../assets/images/pattern-divider-desktop.svg");
 }
 .adviceBoxButton {
+  all: unset;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 0;
+  bottom: -36px;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-image: url("./../assets/images/icon-dice.svg"),
+    linear-gradient(to right, hsl(150, 100%, 66%), hsl(150, 100%, 66%));
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: none;
+  transition: box-shadow 0.5s;
+}
+.adviceBoxButton:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 30px 5px rgba(82, 255, 168, 0.49);
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(82, 255, 168, 0.49);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(82, 255, 168, 0.49);
 }
