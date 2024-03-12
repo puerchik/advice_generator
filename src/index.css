@@ -9,3 +9,15 @@ html {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(218, 23%, 16%);
+}
+
+.attribution {
+  display: none;
+}
