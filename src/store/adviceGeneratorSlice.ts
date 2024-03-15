@@ -1,11 +1,11 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 export type AdviceGenerator = {
-  id: number | null;
-  advice: string | null;
+  id: number | "";
+  advice: string;
 };
 
-const initialState: AdviceGenerator = { id: null, advice: null };
+const initialState: AdviceGenerator = { id: "", advice: "" };
 
 const adviceGeneratorSlice = createSlice({
   name: "adviceGenerator",
