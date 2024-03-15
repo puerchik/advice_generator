@@ -23,19 +23,12 @@ function App() {
   return (
     <>
       <div className={s.wrapper}>
-        <div className={s.adviceBox}>
-          <h3 className={s.adviceBoxTitle}>{`ADVICE #${advice.id}`}</h3>
+        <section className={s.adviceBox}>
+          <h1 className={s.adviceBoxTitle}>{`ADVICE #${advice.id}`}</h1>
           <p className={s.adviceBoxText}>{advice.advice}</p>
           <img className={s.adviceBoxImg} src={divider} alt="divider" />
           <button onClick={setAdvice} className={s.adviceBoxButton}></button>
-        </div>
-      </div>
-      <div className="attribution">
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Your Name Here</a>.
+        </section>
       </div>
     </>
   );
