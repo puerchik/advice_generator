@@ -27,7 +27,9 @@ function App() {
           <h1 className={s.adviceBoxTitle}>{`ADVICE #${advice.id}`}</h1>
           <p className={s.adviceBoxText}>{advice.advice}</p>
           <img className={s.adviceBoxImg} src={divider} alt="divider" />
-          <button onClick={setAdvice} className={s.adviceBoxButton}></button>
+          <button onClick={setAdvice} className={s.adviceBoxButton}>
+            get an advice
+          </button>
         </section>
       </div>
     </>
